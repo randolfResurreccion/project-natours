@@ -1,3 +1,14 @@
+@import './base/base';
+@import './base/animations';
+@import './base/typography';
+@import './base/utils';
+
+@import './abstracts/functions';
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+@import './pages/home';
+
 /* 
 light green: #7ed56f;
 medium green: #55c57a;

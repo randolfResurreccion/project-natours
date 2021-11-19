@@ -21,6 +21,7 @@
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
+        position: relative;
     }
 
     &__img {
@@ -29,5 +30,13 @@
 
     &__text {
         transform: skewX(12deg);
+    }
+
+    &__caption  {
+        @include absolute-center;
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: $default-font-size;
+        text-align: center;
     }
 }

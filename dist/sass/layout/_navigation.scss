@@ -1,7 +1,7 @@
 .navigation {
 
-    &__checkbox {
-        display: none;
+    &__checkbox { 
+        display: none; 
     }
 
     &__button {
@@ -14,11 +14,11 @@
         right: 6rem;
         z-index: 2500;
         box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+        text-align: center;
+        cursor: pointer;
 
-        &:after {
-            content: "";
+        &:after { content: ""; }
 
-        }
     }
 
     &__background {
@@ -52,9 +52,7 @@
         width: 100%
     }
 
-    &__item {
-        margin: 1rem;
-    }
+    &__item { margin: 1rem; }
     
     &__link {
 
@@ -92,5 +90,45 @@
     &__checkbox:checked ~ &__nav {
         opacity: 1;
         width: 100%;
+    }
+
+    &__icon {
+        position: relative;
+        margin-top: 3.3rem;
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: $color-grey-dark-3;
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before { top: -.8rem; }
+        &::after { top: .8rem; }
+    }
+
+    &__button:hover &__icon:before { top: -1rem; }
+    &__button:hover &__icon:after { top: 1rem; }
+
+    &__checkbox:checked + &__button &__icon { background-color: transparent; }
+
+    &__checkbox:checked + &__button &__icon::after { 
+        top: 0;
+        transform: rotate(135deg);  
+    }
+
+    &__checkbox:checked + &__button &__icon::before { 
+        top: 0;
+        transform: rotate(-135deg); 
     }
 }

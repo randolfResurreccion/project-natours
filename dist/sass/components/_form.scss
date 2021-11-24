@@ -38,7 +38,8 @@
          margin: .7rem 0 0 2rem;
          display: block;
          transition: all .3s ease;
-    }
+         margin-left: 2rem;
+         margin-top: .7rem;    }
 
     &__input:placeholder-shown + &__label {
         opacity: 0;
@@ -88,3 +89,5 @@
         opacity: 1;
     }
 }
+
+

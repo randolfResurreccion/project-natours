@@ -23,6 +23,8 @@ Desktop - first
 1800px+:          Big Desktop - $breakpoint: big-desk
 
 1em = 16px
+
+ORDER: Base + typography > general layout + grid > page layout > componenets
 */
 
 @mixin respond($breakpoint) {

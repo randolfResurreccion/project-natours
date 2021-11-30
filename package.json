@@ -4,17 +4,15 @@
   "description": "",
   "private": true,
   "scripts": {
-    "deploy": "gh pages -d dist",
+    "deploy": "gh-pages -d dist",
     "compile-sass": "sass dist/sass/main.scss dist/css/style.css -w "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "homepage": "https://randolfResurreccion.github.io/project-natours",
-  "dependencies": {
-    "gh-pages": "^3.2.3"
-  },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "sass": "^1.43.4"
   }
 }
